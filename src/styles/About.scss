@@ -1,0 +1,66 @@
+.about {
+    min-height: fit-content;
+    background-color: #e6f1f8;
+    color: #02012d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4vw;
+    padding: 6vw;
+    overflow: hidden;
+
+    .define-heading {
+        height: fit-content;
+        align-self: flex-start;
+
+        h1 {
+            font-size: 4.5vw;
+            font-weight: 700;
+            letter-spacing: -0.1vw;
+            line-height: 1.1;
+
+            >span {
+                display: block;
+            }
+
+            .design-line {
+                font-family: "Playfair Display";
+                font-weight: 500;
+                position: relative;
+                display: inline-block;
+
+                .line {
+                    display: inline-block;
+                    width: 6vw;
+                    height: 4px;
+                    background-color: #02012d;
+                    margin-left: 1vw;
+                    vertical-align: middle;
+                }
+            }
+
+            .define-accent {
+                font-family: "Playfair Display";
+                font-weight: 500;
+                margin-left: 25vw;
+                display: inline-block;
+
+                span {
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+
+    .define-body {
+        width: 50%;
+        font-size: 1.1vw;
+        line-height: 1.8;
+        letter-spacing: 0.05vw;
+        color: #02012d;
+        position: relative;
+        align-self: flex-end;
+        overflow: hidden;
+    }
+}

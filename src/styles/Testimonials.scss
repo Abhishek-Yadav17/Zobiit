@@ -1,0 +1,95 @@
+.testimonials {
+    background-color: #e6f1f8;
+    color: #02012d;
+    padding: 6vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4vw;
+
+    h2 {
+        font-size: 4vw;
+        font-weight: 700;
+    }
+
+    .cards {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        padding: 2vw;
+        gap: 0;
+
+        .card:not(:first-child) {
+            margin-left: -2vw;
+        }
+
+        .card {
+            flex: 0 0 19vw;
+            height: 25vw;
+            background-size: cover;
+            background-position: center;
+            border-radius: 1vw;
+            cursor: pointer;
+            transition: all 0.4s ease;
+            overflow: hidden;
+            position: relative;
+            transform: rotate(var(--tilt, 0deg));
+            z-index: 1;
+
+            &:hover {
+                z-index: 10;
+                transform: scale(1.1) rotate(0deg);
+            }
+
+            .overlay {
+                position: absolute;
+                inset: 0;
+                background: rgba(2, 1, 45, 0.65);
+                color: #fff;
+                opacity: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 2vw;
+                font-size: 1.2vw;
+                line-height: 1.4;
+                transition: opacity 0.3s ease;
+
+                p {
+                    font-style: italic;
+                }
+            }
+
+            &:hover .overlay {
+                opacity: 1;
+            }
+        }
+
+        .card:nth-child(1) {
+            background-image: url("/blog1.webp");
+            --tilt: -2deg;
+        }
+
+        .card:nth-child(2) {
+            background-image: url("/blog2.webp");
+            --tilt: 3deg;
+        }
+
+        .card:nth-child(3) {
+            background-image: url("/blog3.webp");
+            --tilt: -4deg;
+        }
+
+        .card:nth-child(4) {
+            background-image: url("/blog4.webp");
+            --tilt: 2deg;
+        }
+
+        .card:nth-child(5) {
+            background-image: url("/blog1.webp");
+            --tilt: -3deg;
+        }
+    }
+}

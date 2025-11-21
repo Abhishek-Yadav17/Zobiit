@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "Digital Marketing",
+    "image": "/img1.png",
+    "description": "Building distinctive brands that reflect values, inspire trust, and create unforgettable connections with audiences."
+  },
+  {
+    "id": 2,
+    "title": "Web Design & Development",
+    "image": "/img2.png",
+    "description": "Crafting responsive, high-performance websites that combine aesthetic excellence with seamless user experiences."
+  },
+  {
+    "id": 3,
+    "title": "Custom Apps",
+    "image": "/img1.png",
+    "description": "Bringing visions to life through cohesive art direction, storytelling, and impactful visual concepts."
+  },
+  {
+    "id": 4,
+    "title": "Mobile Apps",
+    "image": "/img2.png",
+    "description": "Designing intuitive, engaging interfaces that enhance usability, accessibility, and emotional connection."
+  }
+]

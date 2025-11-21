@@ -1,0 +1,27 @@
+@font-face {
+  font-family: Baby;
+  src: url(/Baby\ Gemoy.ttf);
+}
+
+@font-face {
+  font-family: Nexom;
+  src: url(/Nexom.ttf);
+}
+
+@font-face {
+  font-family: Para;
+  src: url(/Para.ttf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Nexom;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: #e6f1f8;
+}

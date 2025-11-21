@@ -1,0 +1,75 @@
+.hero {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    color: #02012D;
+
+    .hero-bg-text {
+        position: absolute;
+        font-size: 8vw;
+        font-family: Para;
+        line-height: 1.2;
+        font-weight: 600;
+        pointer-events: none;
+        user-select: none;
+        text-align: center;
+        width: 100%;
+        text-transform: uppercase;
+        letter-spacing: 10px;
+        z-index: 1;
+        opacity: 0.6;
+    }
+
+    .hero-content {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 99;
+
+        img {
+            object-fit: cover;
+            width: 60vw;
+        }
+    }
+
+    .hero-bottom {
+        position: absolute;
+        height: fit-content;
+        width: 100%;
+        bottom: 0;
+        display: flex;
+        justify-content: space-between;
+        padding: 4vw;
+        padding-bottom: 2vw;
+
+        button {
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            border: none;
+            padding: 1.5vw 3vw;
+            font-size: 16px;
+            border-radius: 20px;
+            font-weight: bold;
+            height: fit-content;
+            width: fit-content;
+            align-self: flex-end;
+            cursor: pointer;
+            z-index: 99;
+
+            &:hover {
+                background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+            }
+        }
+
+        h4 {
+            width: 30%;
+            line-height: 1.5;
+            z-index: 99;
+        }
+    }
+}

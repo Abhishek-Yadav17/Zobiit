@@ -1,0 +1,112 @@
+.feature-section {
+    min-height: fit-content;
+    position: relative;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 8vw;
+    padding: 4vw 4vw;
+    color: #02012d;
+    transition: background 0.3s ease, transform 0.5s ease;
+
+    .feature-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 2vw;
+
+        h1 {
+            font-size: 4.5vw;
+            align-self: flex-start;
+        }
+
+        h4 {
+            width: 50%;
+            font-size: 1.2vw;
+            line-height: 1.5;
+            margin-bottom: 4vw;
+            align-self: flex-start;
+            text-align: start;
+        }
+
+        .feature-cards {
+            width: 100%;
+            display: flex;
+            gap: 4vw;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            .feature-card {
+                border-radius: 12px;
+                height: 35vw;
+                width: 30%;
+                overflow: hidden;
+                display: flex;
+                flex-direction: column;
+                transition: all 0.3s ease;
+
+                .card-image {
+                    width: 100%;
+                    overflow: hidden;
+                    height: 400px;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    padding: 2vw;
+                    transition: height 0.4s ease;
+
+                    img {
+                        width: 70%;
+                        height: auto;
+                        transition: width 0.4s ease, transform 0.4s ease;
+                        border-radius: 10px;
+                    }
+                }
+
+                &:hover {
+                    border: 1px solid #000;
+                    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+                }
+
+                &:hover .card-image img {
+                    width: 100%;
+                }
+
+                .card-text {
+                    padding: 1.5vw;
+                    text-align: left;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.8vw;
+
+                    h3 {
+                        font-size: 1.2vw;
+                        font-weight: 600;
+                    }
+
+                    .line {
+                        width: 100%;
+                        height: 1px;
+                        background: #000;
+                    }
+
+                    .info {
+                        display: flex;
+                        justify-content: space-between;
+                        font-size: 1vw;
+                        color: #555;
+
+                        .author {
+                            font-weight: 500;
+                        }
+
+                        .date {
+                            font-style: italic;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
