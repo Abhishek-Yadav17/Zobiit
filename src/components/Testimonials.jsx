@@ -26,7 +26,7 @@ const Testimonials = () => {
                 className="cards"
                 initial={{ y: 100, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
-                transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
+                transition={{ duration: 0.5, ease: "easeOut", delay: 0.2 }}
                 viewport={{ once: true, amount: 0.6 }}
             >
                 {testimonials.map((t, i) => (

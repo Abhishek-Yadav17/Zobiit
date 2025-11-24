@@ -64,3 +64,40 @@
         overflow: hidden;
     }
 }
+
+@media (max-width: 768px) {
+    .about {
+        padding: 12vw 6vw;
+        gap: 10vw;
+        text-align: center;
+
+        .define-heading {
+            align-self: center;
+
+            h1 {
+                font-size: 8vw;
+                line-height: 1.2;
+
+                .design-line .line {
+                    width: 15vw;
+                    height: 3px;
+                    margin-left: 2vw;
+                }
+
+                .define-accent {
+                    margin-left: 0;
+                    display: block;
+                }
+            }
+        }
+
+        .define-body {
+            width: 100%;
+            align-self: center;
+            font-size: 4vw;
+            line-height: 1.7;
+            letter-spacing: 0.2vw;
+            margin-top: 4vw;
+        }
+    }
+}

@@ -93,3 +93,47 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+  .testimonials {
+    padding: 12vw 6vw;
+    gap: 10vw;
+
+    h2 {
+      font-size: 8vw;
+      line-height: 1.2;
+    }
+
+    .cards {
+      flex-direction: column;
+      flex-wrap: nowrap;
+      gap: 8vw !important;
+      width: 100%;
+      align-items: center;
+
+      .card {
+        flex: none !important;
+        width: 100% !important;
+        height: 60vw !important;
+        margin: 0 !important;
+        transform: none !important;
+        border-radius: 4vw;
+        background-size: cover !important;
+        background-position: center !important;
+        position: relative;
+        z-index: 1;
+
+        &:hover {
+          transform: none !important;
+        }
+
+        .overlay {
+          opacity: 1;
+          background: rgba(2, 1, 45, 0.45); 
+          font-size: 4vw;
+          padding: 5vw;
+        }
+      }
+    }
+  }
+}

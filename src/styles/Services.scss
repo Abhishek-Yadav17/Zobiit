@@ -44,3 +44,27 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+  .services {
+    padding: 12vw 6vw;
+    gap: 10vw;
+    align-items: center;
+    text-align: center;
+
+    .services-top {
+      align-self: center;
+
+      h1 {
+        font-size: 8vw;
+        line-height: 1.2;
+        letter-spacing: -0.3vw;
+
+        .design-line .line {
+          width: 15vw;
+          height: 3px;
+        }
+      }
+    }
+  }
+}

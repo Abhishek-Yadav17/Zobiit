@@ -73,3 +73,48 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+  .hero {
+    height: 100vh;
+    padding: 0 5vw;
+    flex-direction: column;
+    justify-content: center;
+
+    .hero-bg-text {
+      font-size: 15vw;
+      font-weight: bold;
+      top: 20%;
+      letter-spacing: 5px;
+    }
+
+    .hero-content {
+      img {
+        width: 100vw;
+        margin-top: 20vw;
+      }
+    }
+
+    .hero-bottom {
+      bottom: 5%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 5vw;
+      padding: 0 4vw;
+      margin-top: 5vw;
+
+      h4 {
+        width: 100%;
+        text-align: center;
+      }
+
+      button {
+        padding: 3vw 6vw;
+        font-size: 14px;
+        border-radius: 15px;
+        align-self: center;
+      }
+    }
+  }
+}

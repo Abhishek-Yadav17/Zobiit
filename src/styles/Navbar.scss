@@ -6,9 +6,9 @@ nav {
   align-items: center;
   padding: 1vw 4vw;
   background: transparent;
-  top: 2%;
   z-index: 100;
   color: #02012D;
+  transition: 0.3s ease;
 
   h1 {
     font-size: 2vw;
@@ -75,6 +75,51 @@ nav {
       background-color: #FFF;
       padding: 10px;
       border-radius: 50%;
+    }
+  }
+}
+
+nav.scrolled {
+  background-color: #02012d9d;
+  color: #FFF;
+  backdrop-filter: blur(20px);
+
+  .nav2 {
+    i {
+      color: #02012D;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    padding: 3vw 5vw;
+
+    h1 {
+      font-size: 6vw;
+    }
+
+    .nav1 {
+      width: auto;
+
+      .menu-icon {
+        width: 40px;
+        height: 40px;
+      }
+
+      .circle-menu {
+        width: 250px;
+        height: 250px;
+        gap: 4vw;
+
+        h4 {
+          font-size: 5vw;
+        }
+      }
+    }
+
+    .nav2 {
+      display: none;
     }
   }
 }

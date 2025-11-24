@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import '../styles/Navbar.scss'
 import { motion } from 'framer-motion'
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri'
@@ -6,9 +6,18 @@ import { RiMenu3Line, RiCloseLine } from 'react-icons/ri'
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
   const menuItems = ['Home.', 'About Us.', 'Services.', 'Contact.']
+  const [scrolled, setScrolled] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-    <nav>
+    <nav className={scrolled ? "nav scrolled" : "nav"}>
       <motion.div
         className="nav1"
         initial={{ y: -50, opacity: 0 }}
